@@ -3,14 +3,19 @@
 // https://www.w3schools.com/bootstrap/bootstrap_collapse.asp
 
 var clicker = document.getElementById("section-header");
+var hideSection = document.getElementById("section");
 
 clicker.addEventListener('click', function() {
 
-    var hideSection = document.getElementById("section");
-    if (hideSection.style.display === "none") {
-        hideSection.style.display = "block";
-    } else {
+
+    if (hideSection.style.display === 'block') {
         hideSection.style.display = "none";
+    } else {
+        hideSection.style.display = "block";
     }
+
+    // hideSection.style.visibility == "visible" || !hideSection.style.visibility ?
+    //     (section.style.visibility = "hidden") :
+    //     (section.style.visibility = "visible");
 
 })

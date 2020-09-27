@@ -3,10 +3,11 @@
 
 
 var button = document.getElementById("myButton");
+var box = document.getElementsByClassName('box');
 
 button.addEventListener('click', function() {
-    for (let i = 0; i < 3; i++) {
-        document.getElementsByClassName('box')[i].style.backgroundColor = 'blue';
+    for (let i = 0; i < box.length; i++) {
+        box[i].style.backgroundColor = 'blue';
     }
 
 })
